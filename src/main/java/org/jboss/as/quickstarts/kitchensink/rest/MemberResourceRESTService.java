@@ -34,6 +34,7 @@ public class MemberResourceRESTService {
       // as described in the named query blueprint:
       // https://blueprints.dev.java.net/bpcatalog/ee5/persistence/namedquery.html
       final List<Member> results = em.createQuery("select m from Member m order by m.name").getResultList();
+      // this is test row
       return results;
    }
 
